@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-
-  constructor() { }
+  status: string;
+  constructor() {
+  }
 
   ngOnInit(): void {
+    this.status = 'available';
+
   }
 
 }

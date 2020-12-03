@@ -22,6 +22,8 @@
     "@popperjs/core": "^2.5.4",
     "bootstrap": "^4.5.3",
     "jquery": "^3.5.1",
+    "pet-factory": "file:../petFactory/dist/pet-factory/pet-factory-0.0.1.tgz",
+    "pets-list-library": "file:../workspace/dist/pets-list-library/pets-list-library-0.0.2.tgz",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"

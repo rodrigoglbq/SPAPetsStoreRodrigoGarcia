@@ -1,5 +1,19 @@
-<div class="infor bg-info">
-  <h3 class="text-center">Bienvenido al m&oacute;dulo Edition</h3>
-  <hr>
-  <p class="text-center">Aq&iacute; mostraremos algo cómo los animales.</p>
+<div class="infor bg-secondary pb-1">
+  <form>
+    <div class="form-group">
+      <label for="name">Nombre</label>
+      <input [(ngModel)]="name" type="text" class="form-control" id="name" placeholder="Pet's name">
+    </div>
+    <div class="form-group">
+      <label for="name">Status</label>
+      <select  [(ngModel)]="status" class="form-control mb-2">
+        <option value="available">Available</option>
+        <option value="pending">Pending</option>
+        <option value="sold">Sold</option>
+      </select>
+    </div>
+    <input type="submit" value="Create" class="btn btn-success">
+  </form>
+  <lib-PetFactory [name]="name" [status]="status"></lib-PetFactory>
  </div>
+

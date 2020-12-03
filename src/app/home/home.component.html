@@ -1,5 +1,11 @@
-<div class="infor bg-info">
- <h3 class="text-center">Bienvenido al m&oacute;dulo Home</h3>
- <hr>
- <p class="text-center">Aq&iacute; mostraremos algo cómo los animales.</p>
-</div>
+
+ <div class="infor bg-secondary">
+  <div class=statusSelect>
+       <select  [(ngModel)]="status" class="form-control mb-2">
+         <option value="available">Available</option>
+         <option value="pending">Pending</option>
+         <option value="sold">Sold</option>
+       </select>
+     <lib-PetsListLibrary [status]="status"></lib-PetsListLibrary>
+   </div>
+ </div>

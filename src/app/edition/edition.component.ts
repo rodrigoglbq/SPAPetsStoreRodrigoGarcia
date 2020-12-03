@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./edition.component.scss']
 })
 export class EditionComponent implements OnInit {
+  status: string;
+  name: string;
+
 
   constructor() { }
 
